@@ -1,3 +1,59 @@
+@font-face {
+    font-family: 'ShinbiIsSevenYearsOld';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#opening1 {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    top: 160px;
+    left: 35px;
+}
+
+#opening2 {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    top: 400px;
+    left: 90px;
+}
+
+#opening3 {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    padding: 5px 20px 15px 20px;
+    border-radius: 15px;
+    top: 470px;
+    left: 130px;
+    animation: blink 1s infinite;
+
+}
+
 .start-container,
 .room-container {
     position: relative;
@@ -7,9 +63,69 @@
 }
 
 .text {
-    text-align: center;
-    font-size: 17px;
-    font-weight: 550;
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 5px 20px 15px 20px;
+    border-radius: 10px;
+    top: 410px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#choice1 {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    top: 490px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#choice2 {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    top: 520px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#choice3 {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.button {
+    position: absolute;
+    font-family: 'ShinbiIsSevenYearsOld', sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    top: 2px;
+    left: 355px;
+    z-index: 10;
 }
 
 .image {
@@ -22,31 +138,31 @@
 }
 
 .phone {
-    top: 14%;
-    left: 28%;
-    width: 18%;
-    height: 18%;
+    top: 65px;
+    left: 110px;
+    width: 80px;
+    height: 100px;
     z-index: 10;
 }
 
 .wallet {
-    top: 29%;
-    left: 73%;
-    width: 20%;
-    height: 18%;
+    top: 140px;
+    left: 290px;
+    width: 90px;
+    height: 100px;
     z-index: 10;
 }
 
 .clothes {
-    top: 47%;
-    left: 5%;
-    width: 90%;
-    height: 32%;
+    top: 240px;
+    left: 5px;
+    width: 390px;
+    height: 160px;
     z-index: 10;
 }
 
 .diary {
-    top: 63%;
+    top: 280px;
     left: 0%;
     width: 13%;
     height: 10%;
@@ -54,90 +170,90 @@
 }
 
 .diary2 {
-    top: 40%;
-    left: 50%;
+    top: 75%;
+    left: 55%;
     width: 35%;
     height: 10%;
     z-index: 10;
 }
 
 .computer {
-    top: 48%;
+    top: 210px;
     left: 3%;
     width: 22%;
-    height: 15%;
+    height: 18%;
     z-index: 10;
 }
 
 .book {
-    top: 28%;
+    top: 130px;
     left: 0%;
-    width: 22%;
+    width: 23%;
     height: 15%;
     z-index: 10;
 }
 
 .food {
-    top: 73%;
+    top: 320px;
     left: 9%;
     width: 25%;
-    height: 17%;
+    height: 20%;
     z-index: 10;
 }
 
 .mask {
-    top: 33%;
-    left: 67%;
+    top: 150px;
+    left: 270px;
     width: 14%;
     height: 15%;
     z-index: 10;
 }
 
 .picture {
-    top: 52%;
-    left: 75%;
+    top: 230px;
+    left: 300px;
     width: 14%;
     height: 10%;
     z-index: 10;
 }
 
 .mirror {
-    top: 35%;
+    top: 160px;
     left: 89%;
     width: 11%;
-    height: 22%;
+    height: 25%;
     z-index: 10;
 }
 
 .mirror2 {
-    top: 15%;
-    left: 30%;
-    width: 40%;
-    height: 30%;
+    top: 100px;
+    left: 120px;
+    width: 150px;
+    height: 200px;
     z-index: 10;
 }
 
 .door {
-    top: 30%;
-    left: 35%;
-    width: 30%;
-    height: 40%;
+    top: 140px;
+    left: 140px;
+    width: 120px;
+    height: 200px;
     z-index: 10;
 }
 
 .door2 {
-    top: 5%;
-    left: 77%;
-    width: 10%;
-    height: 10%;
+    top: 20px;
+    left: 320px;
+    width: 30px;
+    height: 80px;
     z-index: 10;
 }
 
 .door3 {
-    top: 25%;
-    left: 70%;
-    width: 15%;
-    height: 10%;
+    top: 170px;
+    left: 280px;
+    width: 60px;
+    height: 80px;
     z-index: 10;
 }
 
@@ -145,15 +261,7 @@
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 57%;
-    z-index: 10;
-}
-
-.room {
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 57%;
+    height: 100%;
     z-index: 10;
 }
 
@@ -161,6 +269,6 @@
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 57%;
+    height: 100%;
     z-index: 10;
 }
